@@ -13,5 +13,5 @@ calcIdade();
 alert(`Fora da funcao : Idade ${idade}`)
 Erro pois a variavel let nao existe fora do escopo dela
 */  
-/* Forma orreta */
+/* Forma correta */
 alert(`Fora da funcao: chamando calcIdade ${calcIdade()}`);
