@@ -1,5 +1,5 @@
-var nasc = 2009;
-let nome = "Wagner";
+var nasc = 2010;
+let nome = "Ravy";
 const viva = true;
 
 function calcIdade(ano = 2026){
@@ -19,6 +19,6 @@ function calcIdade(ano = 2026){
 
 calcIdade();
 /*
-var vaza a variavel dentro do escopo da mesma funcao
+var vaza a variavel dentro do escopo da mesma função
 alert(`Pode beber: ${podebeber}`);
 */
