@@ -12,7 +12,6 @@ function proximo(e){
 const prox = document.getElementById("prox");
 prox.addEventListener("click", proximo);
 
-
 function anterior(e){
     e.preventDefault();
     if(i>1){
@@ -20,57 +19,69 @@ function anterior(e){
     }
     imagem.setAttribute("src",`./img/foto${i}.jpg`);
 }
+
 const ant = document.getElementById("ant");
 ant.addEventListener("click", anterior);
+
 function selecionar(e){
     e.preventDefault();
     i = Number(cbbox.value);
-    imagem.setAttribute("src",'./img/foto${i}.jpg');
+    imagem.setAttribute("src",`./img/foto${i}.jpg`);
 }
 const cbbox = document.getElementById("combobox");
 cbbox.addEventListener("change", selecionar);
+
+function mudar(e, foto){
+    e.preventDefault();
+    i = foto;
+    imagem.setAttribute("src",`./img/foto${i}.jpg`);
+}
 
 const opacidade = document.getElementById("opacidade");
 opacidade.addEventListener("input", function(e){
     e.preventDefault();
     let valor = opacidade.value;
     foto.setAttribute("style", `opacity:${valor}`);
-});
+})
 
-const li1 = document.getElementById("li1")
+const li1 = document.getElementById("li1");
 li1.addEventListener("mouseover", function(e){
     e.preventDefault();
     i = 1;
-    imagem.setAttribute("src", `./img/foto${i}.jpg`)
+    foto.setAttribute("src", `./img/foto${i}.jpg`)
 })
 
 const li2 = document.getElementById("li2");
-l12.addEventListener("mouseover", function(e){
+li2.addEventListener("mouseover", function(e){
     e.preventDefault();
     i = 2;
-    imagem.setAttribute("src", `./img/foto${i}.jpg`);
+    foto.setAttribute("src", `./img/foto${i}.jpg`)
 })
+
 const li3 = document.getElementById("li3");
-l13.addEventListener("mouseover", function(e){
+li3.addEventListener("mouseover", function(e){
     e.preventDefault();
     i = 3;
-    imagem.setAttribute("src", `./img/foto${i}.jpg`);
-});
+    foto.setAttribute("src", `./img/foto${i}.jpg`)
+})
+
 const li4 = document.getElementById("li4");
-l14.addEventListener("mouseover", function(e){
+li4.addEventListener("mouseover", function(e){
     e.preventDefault();
     i = 4;
-    imagem.setAttribute("src", `./img/foto${i}.jpg`);
-});
+    foto.setAttribute("src", `./img/foto${i}.jpg`)
+})
+
 const li5 = document.getElementById("li5");
-l15.addEventListener("mouseover", function(e){
+li5.addEventListener("mouseover", function(e){
     e.preventDefault();
     i = 5;
-    imagem.setAttribute("src", `./img/foto${i}.jpg`);
-});
+    foto.setAttribute("src", `./img/foto${i}.jpg`)
+})
+
 const li6 = document.getElementById("li6");
-l16.addEventListener("mouseover", function(e){
+li6.addEventListener("mouseover", function(e){
     e.preventDefault();
     i = 6;
-    imagem.setAttribute("src", `./img/foto${i}.jpg`);
-});
+    foto.setAttribute("src", `./img/foto${i}.jpg`)
+})
